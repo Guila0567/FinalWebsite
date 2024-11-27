@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Print Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+    <!-- Navigation -->
+        <nav>
+                <img src="Guilatto's PrintingtypoA.png" alt="Company Logo">
+            <ul>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+                <a href="#order">Order Now</a>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>High-Quality Printing, Fast & Reliable Service</h2>
+        <p>Bringing your designs to life with precision and quality</p>
+    </section>
+
+<!-- About Us Section -->
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are a team of printing experts committed to delivering high-quality 
+        print materials for businesses and individuals. With years of experience, 
+        we offer everything from business cards to large-scale prints, ensuring 
+        your project is handled with the utmost care and precision.</p>
+</section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <img src="img2.jpg" alt="Service 1" class="service-image">
+                <h3>Custom Merchandise</h3>
+                <p>Personalized novelty items from mugs, keychains, stickers, etc.</p>
+            </div>
+            <div class="service-item">
+                <img src="img3.png" alt="Service 2" class="service-image">
+                <h3>Apparel</h3>
+                <p>Textile prints from T-shirts, to hats, and tote bags.</p>
+            </div>
+            <div class="service-item">
+                <img src="img4.jpg" alt="Service 3" class="service-image">
+                <h3>Print & Xerox</h3>
+                <p>High-resolution printing of documents, and fast & accurate photocopy.</p>
+            </div>
+            <div class="service-item">
+                <img src="img5.jpg" alt="Service 3" class="service-image">
+                <h3>Large Format Printing</h3>
+                <p>Specilaizing in tarpaulin, signages, etc. printing</p>
+            </div>
+            <div class="service-item">
+                <img src="img6.png" alt="Service 3" class="service-image">
+                <h3>Marketing Materials</h3>
+                <p>Eye-catching flyers, brochures, posters, and labels for events, promotions, and more, tailored to your needs.</p>
+            </div>
+            <div class="service-item">
+                <h3>and MORE!</h3>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+                <img src="img8.jpg" alt="Jane Doe" class="testimonial-img">
+                <blockquote>
+                    "The quality of the prints exceeded our expectations! We will definitely be using PrintingShop again."
+                </blockquote>
+                <p>- Jane Doe, Business Owner</p>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+                <img src="img7.jpg" alt="John Smith" class="testimonial-img">
+                <blockquote>
+                    "Quick turnaround time and excellent customer service. Highly recommended!"
+                </blockquote>
+                <p>- John Smith, Event Planner</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="order" class="order">
+        <div class="container">
+            <h2>Order Now!</h2>
+            <p>Submit your print job details and get an instant quote. You can upload files, choose materials, and specify sizes below.</p>
+    
+            <!-- Custom Order Form -->
+            <form id="order-form" class="order-form">
+                <div class="form-group">
+                    <label for="file-upload">Upload Your Design File</label>
+                    <input type="file" id="file-upload" name="file-upload" accept="image/*, .pdf" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="material">Select Material</label>
+                    <select id="material" name="material" required>
+                        <option value="paper">Paper</option>
+                        <option value="vinyl">Vinyl</option>
+                        <option value="canvas">Canvas</option>
+                        <option value="tarpaulin">Tarpaulin</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="size">Select Size</label>
+                    <select id="size" name="size" required>
+                        <option value="a4">A4</option>
+                        <option value="a3">A3</option>
+                        <option value="custom">Custom Size</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="delivery">Delivery Option</label>
+                    <select id="delivery" name="delivery" required>
+                        <option value="pickup">Pickup</option>
+                        <option value="delivery">Delivery (Additional Charges Apply)</option>
+                    </select>
+                </div>
+    
+                <button type="submit" class="btn-submit">Request a Quote / Place Order</button>
+            </form>
+    
+            <!-- Quote Generator (Price Estimate) -->
+            <div id="quote-result" class="quote-result">
+                <p id="quote-message">Estimate your print price by filling out the form.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="Guilatto's PrintingtypoA.png" alt="PrintingShop Logo">
+                </a>
+            </div>
+            <div class="footer-info">
+                <p>Web Design by <strong>Joannah Aguila</strong></p>
+                <p>Email: <a href="mailto:designer@example.com">majoannahfaeaguila@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+    
+
+    
+    <script>
+        // Form and quote generation logic
+        const orderForm = document.getElementById("order-form");
+        const quoteResult = document.getElementById("quote-result");
+        const quoteMessage = document.getElementById("quote-message");
+    
+        orderForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from refreshing the page
+    
+            // Get form values
+            const material = document.getElementById("material").value;
+            const size = document.getElementById("size").value;
+            const quantity = parseInt(document.getElementById("quantity").value, 10);
+            const delivery = document.getElementById("delivery").value;
+    
+            // Calculate base price (for demonstration, you can adjust with your actual pricing)
+            let price = 0;
+    
+            // Price logic based on material
+            if (material === "paper") price = 2;
+            else if (material === "vinyl") price = 5;
+            else if (material === "canvas") price = 8;
+            else if (material === "tarpaulin") price = 10;
+    
+            // Price adjustment based on size
+            if (size === "a3") price *= 1.5;
+            if (size === "custom") price *= 2; // Custom size is more expensive
+    
+            // Multiply by quantity
+            price *= quantity;
+    
+            // Delivery fee
+            if (delivery === "delivery") price += 15; // Additional delivery charge
+    
+            // Display quote in Philippine Pesos
+            quoteMessage.textContent = `Your estimated price: ₱${price.toFixed(2)}. Thank you for ordering!`;
+    
+            // Optionally, you can store this data or send it to a backend to create the order
+        });
+    </script>
+    
+    
+</body>
+</html>
